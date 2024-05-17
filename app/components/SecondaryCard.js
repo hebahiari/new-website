@@ -1,12 +1,17 @@
 import { Github, Link } from "lucide-react"
+import './MainCard.css'
 
 export default function SecondaryCard({ index, project }) {
+    if (!project) {
+        return <></>
+    }
+
     return (
         <div
             key={index}
-            className="not-focused item">
+            className="secondaryCard item">
             <div className='image-container' >
-                <img src='/petsgram.gif'
+                <img src={project.image}
                     style={{ width: '100%' }} />
                 <div className="links" >
                     <a href={project.links[0]} target="_blank" >

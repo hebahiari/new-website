@@ -1,8 +1,9 @@
 .slider {
     width: 100vw;
     position: relative;
-    overflow: hidden;
     margin-bottom: 20px;
+    max-width: 2000px;
+    overflow: hidden;
   }
   
   .container {

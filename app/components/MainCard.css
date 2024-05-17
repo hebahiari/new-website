@@ -1,0 +1,31 @@
+
+.mainCard {
+    padding: 20px;  
+    width: 60vw;
+    max-width: 1000px;
+ }
+
+.mainCardContainer {
+    border: solid black 1px;
+    border-radius: 20px;
+}
+
+.secondaryCard {
+    background-color: green;
+    width: 20vw;
+    max-width: 500px;
+  }
+
+  .imageContainer{
+    position: relative;
+    border-radius: 20px;
+  }
+
+  img{
+    border-radius: 20px 20px 0 0;
+  }
+
+  .links{
+    position: absolute;
+    right: 0;
+  }

@@ -227,6 +227,10 @@ export default function ProjectSlider() {
                 className="container"
                 style={{ transform: `translateX(-${currentSlide * 20}vw)`, width: `${(projects.length) / 3 * 100}vw` }}
             >
+                {/* <SecondaryCard project={projects[currentSlide - 1]} index={currentSlide - 1} />
+                <MainCard project={projects[currentSlide]} index={currentSlide} />
+                <SecondaryCard project={projects[currentSlide + 1]} index={currentSlide + 1} /> */}
+
                 {projects.map((project, index) => {
                     return (
                         <>
@@ -238,6 +242,7 @@ export default function ProjectSlider() {
                         </>
                     )
                 })}
+
             </div>
             <div className="icons">
                 <div className="icon" id="clickButton" onClick={previousSlide}>
