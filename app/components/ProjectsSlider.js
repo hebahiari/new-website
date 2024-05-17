@@ -245,12 +245,8 @@ export default function ProjectSlider() {
 
             </div>
             <div className="icons">
-                <div className="icon" id="clickButton" onClick={previousSlide}>
-                    left
-                </div>
-                <div className="icon" onClick={nextSlide}>
-                    right
-                </div>
+                <button onClick={previousSlide}>left</button>
+                <button onClick={nextSlide}>right</button>
             </div>
         </div>
     );

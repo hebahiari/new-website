@@ -20,16 +20,6 @@
     object-fit: cover;
     object-position: 20%;
   }
-
-  .focused {
-    background-color: red;
-    width: 60vw;
-  }
-
-  .not-focused {
-    background-color: green;
-    width: 20vw;
-  }
   
  .icons {
     width: fit-content;
@@ -41,16 +31,6 @@
     bottom: 25px;
     gap: 20px;
     color: rgb(255, 255, 255);
-  }
-
-  .links{
-    position: absolute;
-    bottom: -5;
-    right: 0;
-  }
-
-  .image-container{
-    position: relative;
   }
   
  .icon {
