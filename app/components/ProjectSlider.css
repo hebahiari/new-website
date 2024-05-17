@@ -33,11 +33,6 @@
     color: rgb(255, 255, 255);
   }
   
- .icon {
-background-color: antiquewhite;
-border-radius: 50%;
-padding: 2px;
-  }
 
   a {
     text-decoration: none;
@@ -55,3 +50,21 @@ padding: 2px;
     }
   } */
   
+
+  .leftOverlay, .rightOverlay{
+position: absolute;
+height: 500px;
+background-color: rgba(255, 0, 0, 0);
+width: 20vw;
+top: 0;
+cursor: pointer;
+z-index: 10;
+  }
+
+  .rightOverlay{
+right: 0;
+  }
+
+  .leftOverlay{
+
+  }
