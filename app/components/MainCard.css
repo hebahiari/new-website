@@ -7,21 +7,22 @@
  }
 
 .mainCardContainer {
-    width: 50vw;
+    width: 56vw;
     border: solid black 1px;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
 }
 
 .secondaryCard {
-    width: 20vw;
+    width: 18vw;
     max-width: 500px;
     border: solid black 1px;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     height: 25vw;
+    margin: 1vw;
 }
 
 .imageContainer{
@@ -29,9 +30,7 @@
     border-radius: 20px;
 }
 
-img{
-    border-radius: 20px 20px 0 0;
-}
+
 
   .links{
     position: absolute;
