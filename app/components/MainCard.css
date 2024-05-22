@@ -1,13 +1,10 @@
 
 .mainCard {
-    width: 60vw;
-    max-width: 1000px;
     display: flex;
     justify-content: center;
  }
 
 .mainCardContainer {
-    width: 56vw;
     border: solid black 1px;
     border-radius: 0 0 20px 20px;
     display: flex;
@@ -16,8 +13,6 @@
 }
 
 .secondaryCard {
-    width: 18vw;
-    max-width: 500px;
     border: solid black 1px;
     border-radius: 0 0 20px 20px;
     display: flex;
@@ -25,7 +20,6 @@
     align-items: center;
     justify-content: start;
     height: 25vw;
-    margin: 1vw;
 }
 
 .imageContainer{

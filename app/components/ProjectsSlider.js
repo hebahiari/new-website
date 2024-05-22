@@ -217,9 +217,11 @@ export default function ProjectSlider() {
         );
     };
 
-    // useEffect(() => {
-    //     setInterval(() => nextSlide(), 4000); // this will make it click again every 1000 miliseconds
-    // }, []);
+    let length = projects.length + 2
+    let width = ((length / 5) * 100)
+    let lengthUnit = (width / length) * (100 / width)
+    let largeCard = lengthUnit * 3
+    let smallCard = lengthUnit
 
     return (
         <div className="slider">
@@ -227,20 +229,23 @@ export default function ProjectSlider() {
             <div className="leftOverlay" onClick={previousSlide}></div>
             <div
                 className="container"
-                style={{ transform: `translateX(-${currentSlide * 20}vw)`, width: `${(projects.length) / 3 * 100}vw` }}
+                style={{
+                    marginLeft: `${width / length}%`,
+                    width: `${width}%`,
+                    transform: `translateX(-${currentSlide * (100 / length)}%)`,
+                }}
             >
                 {projects.map((project, index) => {
                     return (
                         <>
                             {
                                 index === currentSlide ?
-                                    <MainCard project={project} index={index} /> :
-                                    <SecondaryCard project={project} index={index} />
+                                    <MainCard project={project} index={index} lengthUnit={largeCard} /> :
+                                    <SecondaryCard project={project} index={index} lengthUnit={smallCard} />
                             }
                         </>
                     )
                 })}
-
             </div>
             <div className="icons">
                 <button onClick={previousSlide}>left</button>

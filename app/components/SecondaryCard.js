@@ -1,7 +1,7 @@
 import { Github, Link } from "lucide-react"
 import './MainCard.css'
 
-export default function SecondaryCard({ index, project }) {
+export default function SecondaryCard({ index, project, lengthUnit }) {
     if (!project) {
         return <></>
     }
@@ -9,7 +9,8 @@ export default function SecondaryCard({ index, project }) {
     return (
         <div
             key={index}
-            className="secondaryCard item">
+            className="secondaryCard item"
+            style={{ width: `${lengthUnit}%` }}>
             <div className='image-container' >
                 <img src={project.image}
                     style={{ width: '100%' }} />

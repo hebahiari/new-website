@@ -1,5 +1,5 @@
 .slider {
-    width: 100vw;
+    width: 100%;
     position: relative;
     margin-bottom: 20px;
     max-width: 2000px;
@@ -7,19 +7,19 @@
   }
   
   .container {
-    margin-left: 20vw;
     display: flex;
     height: 100%;
     transition: all 2s ease;
     align-items: center;
+    justify-content: start;
   }
   
-  .item {
-    width: 100vw;
+  /* .item {
+    width: 20%;
     height: 100%;
     object-fit: cover;
     object-position: 20%;
-  }
+  } */
   
  .icons {
     width: fit-content;

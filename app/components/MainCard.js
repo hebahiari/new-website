@@ -1,10 +1,13 @@
 import { Github, Link } from "lucide-react"
 import './MainCard.css'
 
-export default function MainCard({ index, project }) {
+export default function MainCard({ index, project, lengthUnit }) {
     return (
         <div className="mainCard item"
             key={index}
+            style={{
+                width: `${lengthUnit}%`
+            }}
         >
             <div className="mainCardContainer">
                 <div className='imageContainer' >
