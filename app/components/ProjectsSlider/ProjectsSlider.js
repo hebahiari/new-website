@@ -193,6 +193,7 @@ export default function ProjectSlider() {
 
     return (
         <div className="slider">
+            <div className="boxShadow"></div>
             <div className="rightOverlay" onClick={nextSlide} style={{ width: `${width / length}%` }}>
                 <button className="sliderButton">
                     <ArrowRight />
