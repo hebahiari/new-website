@@ -11,8 +11,10 @@ export default function MainCard({ index, project, lengthUnit }) {
         >
             <div className="mainCardContainer">
                 <div className='imageContainer' >
-                    <img src='/petsgram.gif'
-                        style={{ width: '100%' }} />
+                    <a href={project.links[1]} target="_blank">
+                        <img src={project.gif ? project.gif : '/petsgram.gif'}
+                            style={{ width: '100%' }} />
+                    </a>
                     <div className="links" >
                         <a href={project.links[0]} target="_blank" >
                             <Github className="icon" />

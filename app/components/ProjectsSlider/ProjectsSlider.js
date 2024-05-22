@@ -12,6 +12,26 @@ export default function ProjectSlider() {
 
     const projects = [
         {
+            name: "IssueTracker",
+            type: "(Issue Tracker website)",
+            desc: [
+                "Add, Update and Delete issues",
+                "Assign issues to different users",
+                'Login/Logout using Google Auth',
+                'Filter/Sort issues by name, date and status',
+                "Add comments to issues",
+                "Dashboard displaying a summary of existing Issues"
+            ],
+            tags: ["Next.js", "TypeScript", "Prisma", "Radix UI"],
+            image: "/img/portfolio/10.png",
+            gif: "/img/portfolio/gifs/issuetracker.gif",
+            links: [
+                "https://github.com/hebahiari/issue-tracker",
+                "https://issuetracker.hebahiari.com/",
+            ],
+        },
+
+        {
             name: "Petsgram",
             type: "(Social media website)",
 
@@ -26,28 +46,10 @@ export default function ProjectSlider() {
             ],
             tags: ["JavaScript", "React", "Express", "Node.js", "Postgres"],
             image: "/img/portfolio/7.PNG",
+            gif: "/img/portfolio/gifs/petsgram.gif",
             links: [
                 "https://github.com/hebahiari/petsgram",
                 "https://petsgram.hebahiari.com/",
-            ],
-        },
-
-        {
-            name: "IssueTracker",
-            type: "(Issue Tracker website)",
-            desc: [
-                "Add, Update and Delete issues",
-                "Assign issues to different users",
-                'Login/Logout using Google Auth',
-                'Filter/Sort issues by name, date and status',
-                "Add comments to issues",
-                "Dashboard displaying a summary of existing Issues"
-            ],
-            tags: ["Next.js", "TypeScript", "Prisma", "Radix UI"],
-            image: "/img/portfolio/10.png",
-            links: [
-                "https://github.com/hebahiari/issue-tracker",
-                "https://issuetracker.hebahiari.com/",
             ],
         },
 
@@ -61,6 +63,7 @@ export default function ProjectSlider() {
             ],
             tags: ["Next.js", "TypeScript", "OpenAI", "Pinecone", "Clerk"],
             image: "/img/portfolio/11.png",
+            gif: "/img/portfolio/gifs/petsgram.gif",
             links: [
                 "https://github.com/hebahiari/ai-notes",
                 "https://smartnotes.hebahiari.com/",
@@ -80,6 +83,7 @@ export default function ProjectSlider() {
             ],
             tags: ["JavaScript", "React", "Redux", "SCSS", "Strapi", "Stripe"],
             image: "/img/portfolio/5.jpg",
+            gif: "/img/portfolio/gifs/petsgram.gif",
             links: [
                 "https://github.com/hebahiari/ecommerce",
                 "https://techwearco.hebahiari.com/",
@@ -99,6 +103,7 @@ export default function ProjectSlider() {
             ],
             tags: ["Python", "PyTorch", "Matplotlib", "PIL", "React"],
             image: "/img/portfolio/9.png",
+            gif: "/img/portfolio/gifs/imageclassifier.gif",
             links: [
                 "https://github.com/hebahiari/flower-classifier",
                 "https://flowers.hebahiari.com/",
@@ -120,6 +125,7 @@ export default function ProjectSlider() {
             ],
             tags: ["JavaScript", "Next.js", "React", "MongoDB"],
             image: "/img/portfolio/TechTopic.png",
+            gif: "/img/portfolio/gifs/techtopic.gif",
             links: [
                 "https://github.com/hebahiari/techtopic",
                 "https://techtopic.hebahiari.com/",
@@ -137,6 +143,7 @@ export default function ProjectSlider() {
             ],
             tags: ["TypeScript", "React", "MUI"],
             image: "/img/portfolio/8.PNG",
+            gif: "/img/portfolio/gifs/petsgram.gif",
             links: [
                 "https://github.com/hebahiari/quiz-app",
                 "https://trivia.hebahiari.com/",
@@ -158,50 +165,11 @@ export default function ProjectSlider() {
             ],
             tags: ["JavaScript", "React", "Node.js", "Express", "Knex"],
             image: "/img/portfolio/1.jpg",
+            gif: "/img/portfolio/gifs/petsgram.gif",
             links: [
                 "https://github.com/hebahiari/restaurant-reservation",
                 "https://booked.hebahiari.com/",
             ],
-        },
-
-        {
-            name: "Flashcard-o-matic",
-            type: "(Studying flashcards)",
-            desc: [
-                "Create a deck of flashcards",
-                "Edit/delete decks",
-                "Add flashcards to deck",
-                "Edit/delete flashcards",
-                "Study deck by going through the cards and flipping to see the answer",
-            ],
-            tags: ["JavaScript", "React", "Bootstrap"],
-            image: "/img/portfolio/4.jpg",
-            links: [
-                "https://github.com/hebahiari/flashcard-app",
-                "https://flashcards.hebahiari.com/",
-            ],
-        },
-
-        {
-            name: "GrubDash",
-            type: "(Food ordering)",
-            desc: ["Add food order to cart", "View food orders", "Edit/delete order"],
-            tags: ["Javascript", "Express", "Node.js", "Postgres"],
-            image: "/img/portfolio/2.jpg",
-            links: ["https://github.com/hebahiari/GrubDash"],
-        },
-
-        {
-            name: "WeLoveMovies",
-            type: "(Movies library)",
-            desc: [
-                "Displays a list of movies",
-                "Shows Available Theatures",
-                "Shows the reviews on each movie",
-            ],
-            tags: ["JavaScript", "React", "Express", "Node.js", "Postgres", "Knex"],
-            image: "/img/portfolio/3.jpg",
-            links: ["https://github.com/hebahiari/we-love-movies"],
         },
     ];
 
@@ -225,12 +193,12 @@ export default function ProjectSlider() {
 
     return (
         <div className="slider">
-            <div className="rightOverlay" onClick={nextSlide}>
+            <div className="rightOverlay" onClick={nextSlide} style={{ width: `${width / length}%` }}>
                 <button className="sliderButton">
                     <ArrowRight />
                 </button>
             </div>
-            <div className="leftOverlay" onClick={previousSlide}>
+            <div className="leftOverlay" onClick={previousSlide} style={{ width: `${width / length}%` }}>
                 <button className="sliderButton right">
                     <ArrowLeft />
                 </button>
