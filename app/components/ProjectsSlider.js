@@ -3,7 +3,7 @@
 import Image from "next/image";
 import "./ProjectSlider.css";
 import { useState } from "react";
-import { Github, Link } from "lucide-react";
+import { ArrowLeft, ArrowRight, Github, Link } from "lucide-react";
 import MainCard from "./MainCard";
 import SecondaryCard from "./SecondaryCard";
 
@@ -225,8 +225,16 @@ export default function ProjectSlider() {
 
     return (
         <div className="slider">
-            <div className="rightOverlay" onClick={nextSlide}></div>
-            <div className="leftOverlay" onClick={previousSlide}></div>
+            <div className="rightOverlay" onClick={nextSlide}>
+                <button className="sliderButton">
+                    <ArrowRight />
+                </button>
+            </div>
+            <div className="leftOverlay" onClick={previousSlide}>
+                <button className="sliderButton right">
+                    <ArrowLeft />
+                </button>
+            </div>
             <div
                 className="container"
                 style={{
@@ -246,10 +254,6 @@ export default function ProjectSlider() {
                         </>
                     )
                 })}
-            </div>
-            <div className="icons">
-                <button onClick={previousSlide}>left</button>
-                <button onClick={nextSlide}>right</button>
             </div>
         </div>
     );

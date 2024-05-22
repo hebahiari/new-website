@@ -1,6 +1,6 @@
 
 .mainCard {
-    display: flex;
+  display: block;
     justify-content: center;
  }
 
@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
 }
 
 .secondaryCard {
