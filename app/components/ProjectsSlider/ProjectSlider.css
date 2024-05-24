@@ -11,7 +11,7 @@
   .container {
     display: flex;
     height: 100%;
-    transition: all 2s ease;
+    transition: all 1s ease;
     align-items: center;
     justify-content: start;
     z-index: 1;

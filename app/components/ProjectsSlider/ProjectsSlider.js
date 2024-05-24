@@ -63,7 +63,7 @@ export default function ProjectSlider() {
             ],
             tags: ["Next.js", "TypeScript", "OpenAI", "Pinecone", "Clerk"],
             image: "/img/portfolio/11.png",
-            gif: "/img/portfolio/gifs/petsgram.gif",
+            gif: "/img/portfolio/gifs/smartnotes.gif",
             links: [
                 "https://github.com/hebahiari/ai-notes",
                 "https://smartnotes.hebahiari.com/",
@@ -83,7 +83,7 @@ export default function ProjectSlider() {
             ],
             tags: ["JavaScript", "React", "Redux", "SCSS", "Strapi", "Stripe"],
             image: "/img/portfolio/5.jpg",
-            gif: "/img/portfolio/gifs/petsgram.gif",
+            gif: "/img/portfolio/gifs/techwearco.gif",
             links: [
                 "https://github.com/hebahiari/ecommerce",
                 "https://techwearco.hebahiari.com/",
@@ -143,7 +143,7 @@ export default function ProjectSlider() {
             ],
             tags: ["TypeScript", "React", "MUI"],
             image: "/img/portfolio/8.PNG",
-            gif: "/img/portfolio/gifs/petsgram.gif",
+            gif: "/img/portfolio/gifs/trivia.gif",
             links: [
                 "https://github.com/hebahiari/quiz-app",
                 "https://trivia.hebahiari.com/",
@@ -214,13 +214,9 @@ export default function ProjectSlider() {
             >
                 {projects.map((project, index) => {
                     return (
-                        <>
-                            {
-                                index === currentSlide ?
-                                    <MainCard project={project} index={index} lengthUnit={largeCard} /> :
-                                    <SecondaryCard project={project} index={index} lengthUnit={smallCard} />
-                            }
-                        </>
+                        index === currentSlide ?
+                            <MainCard project={project} key={index} lengthUnit={largeCard} /> :
+                            <SecondaryCard project={project} key={index} lengthUnit={smallCard} />
                     )
                 })}
             </div>
