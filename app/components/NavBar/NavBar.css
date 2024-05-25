@@ -1,5 +1,17 @@
 .nav {
     background-color: black;
-    height: 90px;
+    margin-top: 20px;
+    border-radius: 50px;
+    height: 70px;
     margin-bottom: 100px;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.link{
+    color: white;
 }

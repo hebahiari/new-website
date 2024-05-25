@@ -7,7 +7,7 @@ margin: 0;
 .websiteContainer{
 overflow: hidden;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 100%;
 }
