@@ -30,6 +30,9 @@ export default function MainCard({ index, project, lengthUnit }) {
                 <p>
                     {project.type}
                 </p>
+                <div className="tags">
+                    {project.tags.map((tag) => <div className="tag">{tag}</div>)}
+                </div>
             </div>
         </div>
     )
